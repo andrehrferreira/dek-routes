@@ -1,0 +1,30 @@
+{
+    "name": "@dekproject/routes",
+    "version": "1.0.0",
+    "description": "Express route controller for DEK",
+    "main": "./build/index.js",
+    "scripts": {
+        "build": "babel src -s -D -d build --presets env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/routes.git"
+    },
+    "keywords": [
+        "dek",
+        "routes"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/routes/issues"
+    },
+    "homepage": "https://github.com/dekproject/routes#readme",
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
+}
