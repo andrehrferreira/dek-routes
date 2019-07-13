@@ -4,9 +4,8 @@ import path from "path";
 import globby from "globby";
 import express from "express";
 
-export default async (routesPath) => {
+export let routes = async (routesPath) => {
     const routesPathResolve = path.join(process.cwd(), routesPath);
-
     const router = express.Router();
 
     await globby([`${routesPathResolve}/*.js`, `${routesPathResolve}/**/*.js`]).then((paths) => {

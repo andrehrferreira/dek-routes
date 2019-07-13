@@ -9,10 +9,10 @@ import express from "express";
 import dotenv from "dotenv";
 
 import { $, plugins, controllers } from "@dekproject/scope";
-import routes from "@dekproject/routes";
+import { routes } from "@dekproject/routes";
 
 (async () => {
-    dotenv.config(); //Load .env
+    dotenv.config();
 
     $.set("app", express());
     $.app.use(await routes(process.env.ROUTES_PATH || "src/routes"));

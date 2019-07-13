@@ -1,6 +1,6 @@
 {
     "name": "@dekproject/routes",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Express route controller for DEK",
     "main": "./build/index.js",
     "scripts": {
